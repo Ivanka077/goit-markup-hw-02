@@ -1,23 +1,18 @@
 
 /* Portfolio */
 
-/* logo, nav, h2 - #2E2F42; 
-adress, p - #434455;
-акцент - #404BBF
-Button's backgrounds - #E7E9FC
-Button's texts - #4D5AE5
-фон у футері - #2E2F42
-*/
+
 :root {
     --primary-text-color: #2E2F42;
     --secondary-text-color:#434455;
     --active-color: #404BBF; 
     --bg-btn-color: #4D5AE5;
-    --bg-pages-color: #ffffff;
+    --bg-pages-color: #FFFFFF;
     --section-color: #2E2F42;
     --secondary-section-color: #F4F4FD;
     --footer-text-color:#E7E9FC;
     --btn-text-color:#FFFFFF;
+    --hero-text-color: #FFFFFF;
 }
 
 body {
@@ -38,10 +33,11 @@ body {
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     text-decoration: none;
 }
 .nav-logo span {
-    color: #4D5AE5;
+    color: var(--bg-btn-color);
 }
 
 .nav-link {
@@ -97,13 +93,13 @@ body {
 }
 
 .section .filter-btn {
-    color: #4D5AE5;
-     cursor: pointer;
+    color: var(--bg-btn-color);
+    cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-    color: #ffffff;
-    background-color: #404BBF;
+    color: var(--bg-pages-color);
+    background-color: var(--active-color);
 }
 
 /* Examples */
@@ -125,16 +121,16 @@ body {
 
 /* Footer */
 .footer {
-    background: #2E2F42;
+    background: var(--primary-text-color);
 }
 .footer-text {
-    color: #E7E9FC;
+    color: var(--footer-text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 .footer-logo {
-    color: #E7E9FC;
+    color: var(--footer-text-color);
     font-family: 'Raleway', sans-serif, cursive;
     font-weight: 800;
     font-size: 18px;
@@ -144,16 +140,16 @@ body {
     text-decoration: none;
 }
 .footer-logo span {
-    color: #4D5AE5;
+    color: var(--bg-btn-color);
 }
 
 /* Studio Page */
 
 .hero {
-    background: #2E2F42;
+    background: var(--primary-text-color);
 }
 .hero-title {
-    color: #ffffff;
+    color: var(--hero-text-color);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.0;
@@ -161,8 +157,8 @@ body {
     letter-spacing: 0.02em;
 }
 .hero-btn {
-    color: #ffffff;
-    background: #4D5AE5;
+    color: var(--btn-text-color);
+    background: var(--bg-btn-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -170,26 +166,26 @@ body {
     align-items: center;
     letter-spacing: 0.04em;
 }
-.hero-btn:hover {
-    color: #ffffff;
-    background: #404BBF;
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--btn-text-color);
+    background: var(--active-color);
 }
 .adv-title {
-    color: #2E2F42;
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 20px;
      line-height: 1.2;
     letter-spacing: 0.02em;
 }
 .adv-text {
-    color: #434455;
-    font-weight: 400;
+    color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 .examples-title {
-    color: #2E2F42;
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -198,14 +194,14 @@ body {
 }
 
 .team {
-    color: #2E2F42;
-    background: #F4F4FD;
+    color: var(--primary-text-color);
+    background: var(--secondary-section-color);
 }
 .team-card {
-    background-color: #FFFFFF;
+    background-color: var(--bg-pages-color);
 }
 .team-title {
-    color: #2E2F42;
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -214,15 +210,14 @@ body {
 
 }
 .team-member {
-    color: #2E2F42;
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 .team-job {
-    color: #434455;
-    font-weight: 400;
+    color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
