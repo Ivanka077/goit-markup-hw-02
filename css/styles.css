@@ -201,7 +201,9 @@ body {
     color: #2E2F42;
     background: #F4F4FD;
 }
-
+.team-card {
+    background-color: #FFFFFF;
+}
 .team-title {
     color: #2E2F42;
     font-weight: 700;
