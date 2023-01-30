@@ -13,6 +13,7 @@
     --footer-text-color:#E7E9FC;
     --btn-text-color:#FFFFFF;
     --hero-text-color: #FFFFFF;
+    --btns-bg-color: #F4F4FD;
 }
 
 body {
@@ -46,7 +47,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    list-style: none;
     text-decoration: none;
     }
 
@@ -56,11 +56,13 @@ body {
   color: var(--active-color);
 }
 
+.adress {
+    font-style: normal;
+}
 .adress-link {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
-    font-style: normal;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -85,6 +87,7 @@ body {
 
 
 .filter-btn {
+    background: var(--btns-bg-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -105,8 +108,7 @@ body {
 /* Examples */
 .text {
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1.5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -150,20 +152,19 @@ body {
 }
 .hero-title {
     color: var(--hero-text-color);
-    font-weight: 700;
     font-size: 56px;
-    line-height: 1.0;
+    line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
 }
 .hero-btn {
+    cursor: pointer;
     color: var(--btn-text-color);
     background: var(--bg-btn-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
 }
 .hero-btn:hover,
@@ -171,14 +172,14 @@ body {
     color: var(--btn-text-color);
     background: var(--active-color);
 }
-.adv-title {
+.advantages-title {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 20px;
      line-height: 1.2;
     letter-spacing: 0.02em;
 }
-.adv-text {
+.advantages-text {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.5;
@@ -190,6 +191,7 @@ body {
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
+    text-transform: capitalize;
     letter-spacing: 0.02em;
 }
 
@@ -202,10 +204,10 @@ body {
 }
 .team-title {
     color: var(--primary-text-color);
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
+    text-transform: capitalize;
     letter-spacing: 0.02em;
 
 }
